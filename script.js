@@ -2,6 +2,8 @@ window.addEventListener("load", () => {
   document.querySelector("canvas");
   var c = canvas.getContext("2d");
 
+  let button = document.getElementById("clear");
+
   let brushSize = 10; //Changes the size of the brush
   let brushColor = "black"; //Changes the color of the brush
 
@@ -36,4 +38,9 @@ window.addEventListener("load", () => {
 
     //console.log(e.clientX, e.clientY);
   }
+
+  //Clear Screen Button
+  button.onclick = function () {
+    c.clearRect(0, 0, innerWidth, innerHeight);
+  };
 });
