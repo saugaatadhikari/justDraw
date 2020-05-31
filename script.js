@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
   var c = canvas.getContext("2d");
 
   let button = document.getElementById("clear");
+  let slider = document.getElementById("myRange");
 
   let brushSize = 10; //Changes the size of the brush
   let brushColor = "black"; //Changes the color of the brush
@@ -21,6 +22,12 @@ window.addEventListener("load", () => {
 
   function startDrawing() {
     drawing = true;
+
+    c.lineWidth = brushSize;
+    c.lineCap = "round";
+    c.strokeStyle = brushColor;
+    c.lineTo(e.clientX, e.clientY);
+    c.stroke();
   }
   function stopDrawing() {
     drawing = false;
@@ -42,5 +49,10 @@ window.addEventListener("load", () => {
   //Clear Screen Button
   button.onclick = function () {
     c.clearRect(0, 0, innerWidth, innerHeight);
+  };
+
+  //Slider for BrushSize
+  slider.oninput = function () {
+    brushSize = slider.value;
   };
 });

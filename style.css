@@ -37,6 +37,8 @@
 
 .text {
   position: absolute;
+  top: 5px;
+  left: 0px;
   background-color: yellow;
 
   text-align: center;
@@ -44,4 +46,42 @@
   font-size: 40px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+/* Sliders */
+
+/* .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+*/
+.slidecontainer {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  width: 200px;
+}
+
+.brushsize {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.slider {
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+
+  outline: none;
+  opacity: 0.7;
+
+  transition: opacity 0.2s;
 }
