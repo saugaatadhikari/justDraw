@@ -56,3 +56,4 @@ window.addEventListener("load", () => {
     brushSize = slider.value;
   };
 });
+// Yo just playing with you code lmao XD LOL 
