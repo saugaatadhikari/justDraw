@@ -34,7 +34,33 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+#picker {
+  position: absolute;
+  float: right;
+  left: 30px;
+  bottom: 5px;
+}
+#fill {
+  position: absolute;
+  float: right;
+  right: 30px;
+  bottom: 5px;
 
+  border: none;
+  border-radius: 10px;
+  color: rgb(241, 241, 241);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 .text {
   position: absolute;
   top: 5px;
@@ -47,7 +73,20 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
+input[type="color"] {
+  -webkit-appearance: none;
+  border: 3px grey;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.3),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 5px grey;
+}
 /* Sliders */
 
 /* .slider {
